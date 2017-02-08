@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/page_bg"
+    android:orientation="vertical"
+    tools:context="com.howietian.shoujiwancai.activities.LoginActivity"
+    >
+  <ImageView
+      android:layout_width="250dp"
+      android:layout_height="150dp"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginTop="10dp"
+      android:src="@mipmap/login_header"
+      />
+  <com.rengwuxian.materialedittext.MaterialEditText
+      android:id="@+id/et_name"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="30dp"
+      android:layout_marginRight="30dp"
+      android:layout_marginTop="10dp"
+      android:drawableLeft="@mipmap/ic_assignment_ind_grey_500_24dp"
+      android:hint="名字"
+      android:textColor="@color/black"
+      app:met_baseColor="@color/black"
+      app:met_floatingLabel="highlight"
+      app:met_floatingLabelAnimating="true"
+      app:met_floatingLabelTextSize="@dimen/Caption"
+      app:met_primaryColor="@color/colorPrimary"
+      app:met_singleLineEllipsis="true"
+
+      />
+  <com.rengwuxian.materialedittext.MaterialEditText
+      android:id="@+id/et_phoneNum"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="30dp"
+      android:layout_marginRight="30dp"
+      android:layout_marginTop="5dp"
+      android:drawableLeft="@mipmap/ic_smartphone_grey_500_24dp"
+      android:hint="手机号"
+      android:textColor="@color/black"
+      app:met_baseColor="@color/black"
+      app:met_floatingLabel="highlight"
+      app:met_floatingLabelAnimating="true"
+      app:met_floatingLabelTextSize="@dimen/Caption"
+      app:met_primaryColor="@color/colorPrimary"
+      app:met_singleLineEllipsis="true"
+
+      />
+  <com.rengwuxian.materialedittext.MaterialEditText
+      android:id="@+id/et_pwd"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="30dp"
+      android:layout_marginRight="30dp"
+      android:layout_marginTop="5dp"
+      android:drawableLeft="@mipmap/ic_lock_grey_500_24dp"
+      android:drawableRight="@mipmap/ic_visibility_off_grey_500_24dp"
+      android:hint="密码"
+      android:inputType="textPassword"
+      app:met_baseColor="@color/black"
+      app:met_floatingLabel="highlight"
+      app:met_floatingLabelAnimating="true"
+      app:met_floatingLabelTextSize="@dimen/Caption"
+      app:met_primaryColor="@color/colorPrimary"
+      app:met_singleLineEllipsis="true"
+      />
+
+  <Button
+      android:id="@+id/btn_register"
+      android:layout_width="match_parent"
+      android:layout_height="60dp"
+      android:layout_marginLeft="30dp"
+      android:layout_marginRight="30dp"
+      android:layout_marginTop="30dp"
+      android:background="@drawable/login_selector"
+      android:text="注册"
+      android:textColor="@color/white"
+      android:textSize="@dimen/BodySmall"
+
+      />
+
+  <TextView
+      android:id="@+id/tv_login"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="用户登录"
+      android:textSize="@dimen/BodyLarge"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginLeft="30dp"
+      android:layout_marginRight="30dp"
+      android:layout_marginTop="50dp"
+      android:textColor="@color/colorAccent"
+      />
+
+
+
+
+</LinearLayout>
+
