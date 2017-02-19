@@ -39,6 +39,13 @@ private Fragment homeFrg;
   }
 
   public void initViews() {
+    Window window = getWindow();
+    //清除状态栏透明
+    window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+    //设置状态栏颜色的flag
+    window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+    //设置状态栏颜色
+    window.setStatusBarColor(getResources().getColor(R.color.colorPrimaryDark));
     bnvBar = (BottomNavigationBar) findViewById(R.id.bnvBar);
     bnvBar.setMode(BottomNavigationBar.MODE_SHIFTING);
     bnvBar.setBackgroundStyle(BottomNavigationBar.BACKGROUND_STYLE_STATIC);
