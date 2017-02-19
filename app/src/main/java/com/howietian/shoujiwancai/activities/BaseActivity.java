@@ -8,6 +8,11 @@ import com.howietian.shoujiwancai.R;
 
 public abstract class BaseActivity extends AppCompatActivity {
 
+  /**
+   * 做一次修改，提交一次远程仓库的标记！
+   * @param savedInstanceState
+     */
+
   @Override protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentViews();
