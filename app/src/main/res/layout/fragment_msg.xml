@@ -11,6 +11,23 @@
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:background="@color/colorPrimary"
-      ></android.support.v7.widget.Toolbar>
+      />
+
+
+  <android.support.v4.widget.SwipeRefreshLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+      android:id="@+id/refresh_msg">
+
+
+      <ListView
+          android:layout_width="match_parent"
+          android:id="@+id/msg_listview"
+          android:layout_weight="1"
+          android:layout_height="0dp">
+      </ListView>
+
+  </android.support.v4.widget.SwipeRefreshLayout>
 
 </LinearLayout>
